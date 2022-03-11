@@ -98,4 +98,19 @@ In the following sections I will talk about topics that you would need to focus 
 
 ### Namespaces, Streams & Standard Library
 
-The C++ Standard Library is your friend. 
+C++ has namespaces, a way to group together classes, functions and variable definitions from different sources under a single umbrella. The namespace `std` contains all the tools that are in the C++ standard. It is the named scope for all standard implementations of pretty much everything you would need for general-purpose programming, scattered across a number of different headers such as `<iostream>` (and their corresponding source files).
+The header file provides an interface, a catalog of the things provided by a library, which are then implemented in separate source files. This header file oriented program structure should be recognized in great detail since this clear distinction between interface and implementation is at the heart of good C++ program design.
+The object `cout` is a type of `stream`, which is a new concept in C++. Instead of having a specific function that prints to the console, the stream-based IO is more generic in the sense that we can write polymorphic code that can write to any `stream`, not just the console, alongside the fact that we can achieve almost the same task of formatted-strings with `cout`, as well as being [type-safe](https://stackoverflow.com/questions/17789396/how-cout-is-more-typesafe-than-printf).
+You should spend some time studying the different types of `stream`s and their class-hierarchy since most of the IO happens over streams.
+
+### Memory Management, Pointers & References
+
+C++, much like C, has manual garbage collection*, using `new` and `delete` and their variants. The key difference is that we don't have to allocate raw memory and provide the size of the memory block. `new` and `delete` are more type-safe. Learning this new memory management is crucial in situations where you have to manage your own data. Consequently, pointers also play an important part. References are new to C++, which can be thought of as named aliases to another variable.
+
+**Note***: There is indeed a way to do automatic garbage allocation, known as RAII (Resource Allocation Is Initialization), it is a principle that is used to build most of the standard container classes, (and you can, too), which states that an object that is initialized with some allocated resource is in charge of that resource, and will relinquish the resource as soon as it goes out of scope (aka, destroyed).
+
+
+### Object Oriented Programming
+
+The major advantage of C++ is its adaptation of Object-oriented programming. But unlike `Java`, it is not mandatory to make pretty much everything about your program a class. As mentioned earlier, C++ handles `struct` differently. Apart from the syntactical differences, `struct`s are just the same as `class`, except all the data members in `struct` are by-default `public`, whereas in `class` they are `private`. These are Access-specifiers that let us know the scope of accessibility of a member in a class.
+The usual concepts of encapsulation and data hiding 
