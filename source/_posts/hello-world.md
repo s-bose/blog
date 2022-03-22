@@ -4,6 +4,12 @@ date: 2022-01-01
 keywords:
 - hexo
 - first_post
+tags:
+- hexo
+- first post
+categories:
+- blog
+- general
 clearReading: true
 thumbnailImage: coffee.jpg
 thumbnailImagePosition: left
