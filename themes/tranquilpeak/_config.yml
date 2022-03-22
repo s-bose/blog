@@ -201,9 +201,9 @@ gitalk:
     # Switch
     enable: true
     # Your client ID:
-    client_id: aa51472f88a1ec09d922
+    client_id: 825a856582d1221b12c3
     # Your client secret:
-    client_secret: 125d2220f3d5fd7530798222ad205a5948dbb9d1
+    client_secret: 063ad63eed2ec5fba5f611981bf1cac51eda6c94
     # Your Github ID (Github username):
     owner: s-bose
     # The repo to store comments:
