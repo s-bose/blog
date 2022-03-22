@@ -199,15 +199,15 @@ gitment:
 # Read https://github.com/gitalk/gitalk#options to set up Gitalk
 gitalk:
     # Switch
-    enable: true
+    enable: false
     # Your client ID:
-    client_id: 825a856582d1221b12c3
+    client_id:
     # Your client secret:
-    client_secret: 063ad63eed2ec5fba5f611981bf1cac51eda6c94
+    client_secret:
     # Your Github ID (Github username):
-    owner: s-bose
+    owner:
     # The repo to store comments:
-    repo: s-bose.github.io
+    repo:
     # The attribute of posts to use to link them to GitHub issues.
     # See all attributes: https://hexo.io/docs/variables#Page-Variables
     # `path` is recommended because the identifier needs to be unique and shorter than 50 characters.
