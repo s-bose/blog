@@ -3,11 +3,15 @@ title: A roadmap to CPP
 date: 2022-02-12
 keywords:
 - cpp
+tags:
+- cpp
+categories:
+- programming
 clearReading: true
 thumbnailImage: cpp.png
 thumbnailImagePosition: left
 metaAlignment: center
-comments: false
+comments: true
 meta: false
 actions: false
 ---

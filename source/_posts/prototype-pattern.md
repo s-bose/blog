@@ -5,13 +5,13 @@ categories:
 - programming
 tags:
 - design pattern
-- c++
+- cpp
 - inheritance
 clearReading: true
 thumbnailImage: cpp.png
 thumbnailImagePosition: left
 metaAlignment: center
-comments: false
+comments: true
 meta: false
 actions: false
 ---
@@ -198,4 +198,4 @@ If it is accidentally passed by value, with the implicitly generated copy constr
 
 This is why, we have to either delete the implicit copy/move constructor like we did in the last example, if the Base class does not have any data, or else make the constructors protected, so the copying can only be done from the context of Derived class.
 
-For more example, the link is useful, check C.67 for this particular issue.
+For more example, the link is useful, check C.67 for this particular issue. -->

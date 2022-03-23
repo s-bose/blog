@@ -4,6 +4,11 @@ date: 2022-01-01
 keywords:
 - hexo
 - first_post
+tags:
+- blog
+- first post
+categories:
+- general
 clearReading: true
 thumbnailImage: coffee.jpg
 thumbnailImagePosition: left
@@ -12,7 +17,7 @@ coverImage: coffee.jpg
 coverCaption: "A beautiful cup of covfefe"
 coverMeta: out
 coverSize: partial
-comments: false
+comments: true
 meta: false
 actions: false
 ---
