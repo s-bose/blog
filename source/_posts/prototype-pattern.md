@@ -8,13 +8,22 @@ tags:
 - cpp
 - inheritance
 clearReading: true
-thumbnailImage: cpp.png
+thumbnailImage: clone.png
 thumbnailImagePosition: left
 metaAlignment: center
 comments: true
 meta: false
 actions: false
 ---
+
+<!-- more -->
+
+A discussion on the Prototype design pattern and basic implementation in C++
+
+<!-- excerpt -->
+
+<!-- toc -->
+
 
 # Introduction
 
@@ -26,7 +35,7 @@ But in a case where the actual type of the object is not inferrable, primarily w
 
 We might be tempted to make the constructor function polymorphic, but therein lies the trouble, and hence, the pattern.
 
-## Virtual Constructors (?)
+# Virtual Constructors (?)
 
 Well, it does not make sense (atleast in C++). It goes against the very principle of virtual functions and polymorphism.
 We create virtual functions so that we can get different versions of them depending on the object they're called from. It cannot happen if the object doesn't exist yet.
@@ -40,7 +49,7 @@ Finally, to clear things up, this quote from the man himself on [why we can't ha
 For similar reasons, the variants of constructors, such as copy or move constructors also cannot be made virtual.
 
 
-## Solution
+# Solution
 
 However, if you are really into making copies of polymorphic objects through a unified Base interface,then Prototype pattern is a workaround for this sort of problem.
 
@@ -161,12 +170,12 @@ We cannot just use `std::vector<Base>` and insert `Derived` objects in there, be
 Instead, in a `std::vector<Wrapper>`, we can `push_back` both a `Wrapper` object initialized with a `Base*`, and a `Derived*`, and at the time of insertion, it will copy construct the internal pointed-to object properly (`other.d_bp->clone()` will call `Base::copy()` and `Derived::copy()` respectively and return a pointer to a deep-copied `Base` or `Derived` object from the passed one).
 
 
-## Conclusion
+# Conclusion
 Prototype pattern is somewhat complex, but nevertheless pretty useful. Off the top of my head, one implementation would be to facilitate Java-like generics such as `ArrayList<T>`, where all classes can be made subclasses to a common Base class, and provide safe copying (although I don't see the need of that in C++ since abstract containers and templates already exist and are much more powerful).
 We could also use this pattern to enforce a guideline to provide the classes inheriting from the Base with `copy` and `clone` functionality to be able to integrate with some Base configuration, while preserving the Derived object's structure.
 Lastly, closely related to the Factory pattern, when your Base class has multiple hierarchies of polymorphic derivations, instead of providing a factory method for each of the classes, we can make each class in the inheritance chain a prototype and provide them with the `clone` function which the clients can use to create copies of whichever type they are working with.
 
-## Further Reading
+# Further Reading
 
 1. [Why do we not have a virtual constructor in C++? [StackOverflow]](https://stackoverflow.com/questions/733360/why-do-we-not-have-a-virtual-constructor-in-c)
 2. [A really good explanation of Prototype Pattern with examples in various languages](https://refactoring.guru/design-patterns/prototype)
