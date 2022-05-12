@@ -8,3 +8,4 @@ hexo.extend.helper.register('generate_sharing_link', function(post, url) {
     return post[$1];
   });
 });
+
