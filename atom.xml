@@ -3,11 +3,11 @@
   <title>Hexo</title>
   
   
-  <link href="https://s-bose.github.io/atom.xml" rel="self"/>
+  <link href="https://s-bose.github.io/blog/atom.xml" rel="self"/>
   
-  <link href="https://s-bose.github.io/"/>
+  <link href="https://s-bose.github.io/blog/"/>
   <updated>2022-05-12T21:34:43.496Z</updated>
-  <id>https://s-bose.github.io/</id>
+  <id>https://s-bose.github.io/blog/</id>
   
   <author>
     <name>Shiladitya Bose</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>prototype-pattern</title>
-    <link href="https://s-bose.github.io/2022/03/22/prototype-pattern/"/>
-    <id>https://s-bose.github.io/2022/03/22/prototype-pattern/</id>
+    <link href="https://s-bose.github.io/blog/2022/03/22/prototype-pattern/"/>
+    <id>https://s-bose.github.io/blog/2022/03/22/prototype-pattern/</id>
     <published>2022-03-22T17:49:04.000Z</published>
     <updated>2022-05-12T21:34:43.496Z</updated>
     
@@ -32,21 +32,21 @@
     
     
     
-    <category term="programming" scheme="https://s-bose.github.io/categories/programming/"/>
+    <category term="programming" scheme="https://s-bose.github.io/blog/categories/programming/"/>
     
     
-    <category term="design pattern" scheme="https://s-bose.github.io/tags/design-pattern/"/>
+    <category term="design pattern" scheme="https://s-bose.github.io/blog/tags/design-pattern/"/>
     
-    <category term="cpp" scheme="https://s-bose.github.io/tags/cpp/"/>
+    <category term="cpp" scheme="https://s-bose.github.io/blog/tags/cpp/"/>
     
-    <category term="inheritance" scheme="https://s-bose.github.io/tags/inheritance/"/>
+    <category term="inheritance" scheme="https://s-bose.github.io/blog/tags/inheritance/"/>
     
   </entry>
   
   <entry>
     <title>A roadmap to CPP</title>
-    <link href="https://s-bose.github.io/2022/02/12/second-post/"/>
-    <id>https://s-bose.github.io/2022/02/12/second-post/</id>
+    <link href="https://s-bose.github.io/blog/2022/02/12/second-post/"/>
+    <id>https://s-bose.github.io/blog/2022/02/12/second-post/</id>
     <published>2022-02-11T18:30:00.000Z</published>
     <updated>2022-03-23T01:21:25.571Z</updated>
     
@@ -59,17 +59,17 @@
     
     
     
-    <category term="programming" scheme="https://s-bose.github.io/categories/programming/"/>
+    <category term="programming" scheme="https://s-bose.github.io/blog/categories/programming/"/>
     
     
-    <category term="cpp" scheme="https://s-bose.github.io/tags/cpp/"/>
+    <category term="cpp" scheme="https://s-bose.github.io/blog/tags/cpp/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="https://s-bose.github.io/2022/01/01/hello-world/"/>
-    <id>https://s-bose.github.io/2022/01/01/hello-world/</id>
+    <link href="https://s-bose.github.io/blog/2022/01/01/hello-world/"/>
+    <id>https://s-bose.github.io/blog/2022/01/01/hello-world/</id>
     <published>2021-12-31T18:30:00.000Z</published>
     <updated>2022-03-23T01:20:22.876Z</updated>
     
@@ -82,12 +82,12 @@
     
     
     
-    <category term="general" scheme="https://s-bose.github.io/categories/general/"/>
+    <category term="general" scheme="https://s-bose.github.io/blog/categories/general/"/>
     
     
-    <category term="blog" scheme="https://s-bose.github.io/tags/blog/"/>
+    <category term="blog" scheme="https://s-bose.github.io/blog/tags/blog/"/>
     
-    <category term="first post" scheme="https://s-bose.github.io/tags/first-post/"/>
+    <category term="first post" scheme="https://s-bose.github.io/blog/tags/first-post/"/>
     
   </entry>
   
