@@ -13,7 +13,8 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: 'https://s-bose.github.io/'
+url: 'https://s-bose.github.io/blog'
+root: /blog
 # url: 'http://localhost:4000'
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -104,5 +105,5 @@ theme: tranquilpeak
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repository: git@github.com:s-bose/s-bose.github.io.git
-  branch: main
+  repo: https://github.com/s-bose/blog.git
+  branch: gh-pages
